@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(4, 26, 26);
+    font-family: 'EB Garamond', serif;
+}
+
+.container {
+    width: 70%;
+    max-width: 400px;
+    margin: 5% auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+input {
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    padding: 10px;
+    height: 40px; /* Set the height to make it the same as the button */
+    border: 2px solid rgb(56, 210, 210);
+    border-radius: 12px;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    height: 40px; /* Set the height to make it the same as the input */
+    background-color: rgb(4, 26, 26);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    font-size: 19px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(56, 210, 210);
+}
+
+.text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.text ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #a3f7f1;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.text ul span {
+    cursor: pointer;
+}
+
+.text ul span.edit-icon {
+    margin-left: auto;
+    margin-right: 3px;
+}
+
+.text ul span.delete-icon {
+    margin-right: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
